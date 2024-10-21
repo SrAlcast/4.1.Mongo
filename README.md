@@ -9,8 +9,7 @@ El proyecto incluye los siguientes archivos y directorios:
 
 ```
 ├── campaigns.json       # Datos en formato JSON para la colección de campañas
-├── notebooks/           # Notebooks de Jupyter con las consultas y soluciones del laboratorio
-├── src/                 # Scripts de procesamiento de datos
+├── lab.ipynb            # Notebooks de Jupyter con las consultas y soluciones del laboratorio
 ├── README.md            # Descripción del proyecto
 ```
 
@@ -23,15 +22,16 @@ El proyecto incluye los siguientes archivos y directorios:
 
 ### Ejercicio 2: Consultas Básicas
 - Consultas como encontrar locales de tipo "Warehouse" y productos fuera de la categoría "Electronics".
-- Búsqueda de locales con `premise_id` menor o igual a 3, entre otras.
+- Búsqueda de locales y clientes con `premise_id` y otros de diferentes cosas.
 
 ### Ejercicio 3: Proyecciones y Ordenamiento
 - Ejemplos de proyecciones como mostrar solo ciertos campos (`premise_id`, `premises_type`).
 - Ordenamiento de productos por nombre y paginación de clientes.
+- Encuentra los primeros 5 clientes.
 
 ### Ejercicio 4: Consultas Avanzadas
 - Consultas de agrupación, búsquedas cruzadas, y proyecciones más complejas.
-- Ejemplos incluyen campañas que comenzaron en 2021 y búsqueda de productos que contienen la letra "a".
+- Ejemplos incluyen campañas que comenzaron en 2021 y búsqueda de productos que contienen la letra "a", entre otros
 
 ## 🛠️ Instalación y Requisitos
 

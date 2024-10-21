@@ -1,37 +1,38 @@
-# 🛒 Laboratorio 4.1: Gestión de Campañas de Marketing en MongoDB
+# 🏢 Laboratorio 4.1: Consultas Avanzadas en MongoDB: Análisis de Empresas
 
 ## 📖 Descripción
-Este laboratorio se centra en la creación y manipulación de una base de datos MongoDB para una empresa de comercio electrónico que gestiona campañas de marketing, locales, productos y clientes. El objetivo es optimizar la gestión de datos a través de consultas y operaciones avanzadas en MongoDB, permitiendo analizar mejor la información para tomar decisiones informadas.
+Este laboratorio se enfoca en realizar consultas avanzadas en MongoDB para obtener información sobre empresas a partir de diversas condiciones y restricciones. El objetivo es dominar las consultas complejas y de agregación para obtener insights valiosos sobre las empresas, como número de empleados, valoración, adquisiciones, y fechas de fundación.
 
 ## 🗂️ Estructura del Proyecto
 
 El proyecto incluye los siguientes archivos y directorios:
 
 ```
-├── campaigns.json       # Datos en formato JSON para la colección de campañas
+├── companies.json       # Datos en formato JSON para la colección de empresas
 ├── lab.ipynb            # Notebooks de Jupyter con las consultas y soluciones del laboratorio
 ├── README.md            # Descripción del proyecto
 ```
 
-## 📑 Ejercicios Realizados
+## 📑 Ejercicios la lab
 
-### Ejercicio 1: Creación de la Base de Datos y Colecciones
-- Carga del archivo JSON `campaigns.json`.
-- Creación de la base de datos `EcommerceDB`.
-- Inserción de datos en las colecciones correspondientes.
-
-### Ejercicio 2: Consultas Básicas
-- Consultas como encontrar locales de tipo "Warehouse" y productos fuera de la categoría "Electronics".
-- Búsqueda de locales y clientes con `premise_id` y otros de diferentes cosas.
-
-### Ejercicio 3: Proyecciones y Ordenamiento
-- Ejemplos de proyecciones como mostrar solo ciertos campos (`premise_id`, `premises_type`).
-- Ordenamiento de productos por nombre y paginación de clientes.
-- Encuentra los primeros 5 clientes.
-
-### Ejercicio 4: Consultas Avanzadas
-- Consultas de agrupación, búsquedas cruzadas, y proyecciones más complejas.
-- Ejemplos incluyen campañas que comenzaron en 2021 y búsqueda de productos que contienen la letra "a", entre otros
+1. Todas las empresas cuyo nombre sea `'Babelgum'`, recuperando solo su campo `name`.
+2. Empresas con más de 5000 empleados, limitando la búsqueda a 20 empresas y ordenándolas por número de empleados.
+3. Empresas fundadas entre 2000 y 2005, recuperando solo los campos `name` y `founded_year`.
+4. Empresas con una valoración de más de 100,000,000 que fueron fundadas antes de 2010, recuperando los campos `name` e `ipo`.
+5. Empresas con menos de 1000 empleados y fundadas antes de 2005, ordenadas por número de empleados, y limitando a 10 empresas.
+6. Empresas que no incluyen el campo `partners`.
+7. Empresas con un valor nulo en el campo `category_code`.
+8. Empresas con al menos 100 empleados pero menos de 1000, recuperando los campos `name` y `number_of_employees`.
+9. Ordenar las empresas por su precio de IPO en orden descendente.
+10. Recuperar las 10 empresas con más empleados, ordenadas por el número de empleados.
+11. Empresas fundadas en el segundo semestre del año, limitando la búsqueda a 1000 empresas.
+12. Empresas fundadas antes del año 2000 con un monto de adquisición superior a 10,000,000.
+13. Empresas adquiridas después de 2010, ordenadas por monto de adquisición, recuperando los campos `name` y `acquisition`.
+14. Ordenar las empresas por su `founded_year`, recuperando los campos `name` y `founded_year`.
+15. Empresas fundadas en los primeros siete días del mes, ordenadas por su `acquisition price` en orden descendente, limitando la búsqueda a 10 documentos.
+16. Empresas en la categoría `'web'` con más de 4000 empleados, ordenadas por la cantidad de empleados en orden ascendente.
+17. Empresas cuyo monto de adquisición es superior a 10,000,000 y cuya moneda es `'EUR'`.
+18. Empresas adquiridas en el primer trimestre del año, limitando la búsqueda a 10 empresas y recuperando los campos `name` y `acquisition`.
 
 ## 🛠️ Instalación y Requisitos
 
@@ -48,13 +49,13 @@ pip install pymongo pandas
 
 ## 📊 Resultados y Conclusiones
 
-- La implementación de MongoDB permite consultas rápidas y eficientes sobre grandes volúmenes de datos.
-- Las proyecciones y agregaciones realizadas optimizan la recuperación de datos para análisis específicos.
-- La capacidad de realizar búsquedas cruzadas y filtrado por criterios avanzados facilita la toma de decisiones empresariales.
+- Las consultas avanzadas en MongoDB permiten obtener insights detallados sobre empresas, como adquisiciones, tamaño y fechas de fundación.
+- La flexibilidad de MongoDB para realizar búsquedas cruzadas y consultas agregadas es clave para análisis complejos.
 
 ## 🔄 Próximos Pasos
-- Añadir más datos históricos para realizar análisis más profundos.
-- Implementar técnicas avanzadas de optimización de consultas en MongoDB.
+- Continuar optimizando las consultas para grandes conjuntos de datos.
+- Implementar nuevas consultas de agregación y filtrado más complejas para ampliar el análisis.
+
 
 ## 🙌 Créditos
 

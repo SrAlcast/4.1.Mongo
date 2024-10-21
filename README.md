@@ -58,4 +58,4 @@ pip install pymongo pandas
 
 ## 🙌 Créditos
 
-Este proyecto fue desarrollado como parte de una práctica que incorpora la mejora de paralelización y asincronía en tareas de automatización y scraping web para mejorar la eficiencia en la recolección de datos meteorológicos.
+Este proyecto fue desarrollado como parte de una práctica que incorpora la mejora de uso de mongo.
